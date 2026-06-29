@@ -42,25 +42,6 @@ Helping farmers make smarter decisions with AI, voice interaction, weather insig
 * 🌍 Multi Language Support
 * 📱 Responsive Design
 
----
-
-# 🖥️ Preview
-
-> Add screenshots here
-
-| Dashboard | Crop Doctor |
-| --------- | ----------- |
-|   <img width="627" height="1040" alt="image" src="https://github.com/user-attachments/assets/4d4730ee-7e34-4ed1-9a08-3d2eaeaf273d" />
-   | <img width="625" height="1038" alt="image" src="https://github.com/user-attachments/assets/89980553-cf3f-4ab0-abb9-c13277406fff" />
-       |
-
-| Voice Assistant | Mandi Prices |
-| --------------- | ------------ |
-| <img width="626" height="1043" alt="image" src="https://github.com/user-attachments/assets/0ba3f7aa-1578-4d39-a61d-1e783c09a271" />
-           | <img width="622" height="1045" alt="image" src="https://github.com/user-attachments/assets/4c3d7ec1-5442-4a5f-b835-abd61dcca739" />
-        |
-
----
 
 # ⚡ Tech Stack
 
