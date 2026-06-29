@@ -38,7 +38,6 @@ function SchemeCard({ scheme }) {
       layout
       className="card overflow-hidden"
     >
-      {/* Header */}
       <button
         onClick={() => setExpanded(e => !e)}
         className="w-full flex items-center gap-3 text-left"
@@ -58,7 +57,6 @@ function SchemeCard({ scheme }) {
         </span>
       </button>
 
-      {/* Expanded */}
       <AnimatePresence>
         {expanded && (
           <motion.div
@@ -69,7 +67,6 @@ function SchemeCard({ scheme }) {
             className="overflow-hidden"
           >
             <div className="pt-4 mt-4 border-t border-secondary/20">
-              {/* Tabs */}
               <div className="flex gap-1 overflow-x-auto pb-1 mb-4">
                 {tabs.map(tb => (
                   <button
@@ -87,7 +84,6 @@ function SchemeCard({ scheme }) {
                 ))}
               </div>
 
-              {/* Content */}
               <ul className="space-y-2 mb-4">
                 {content[tab].map((item, i) => (
                   <li key={i} className="flex items-start gap-2 text-sm text-text-secondary">
@@ -102,7 +98,6 @@ function SchemeCard({ scheme }) {
                 ))}
               </ul>
 
-              {/* AI Explain button */}
               <button
                 onClick={handleExplain}
                 disabled={loadingAi}

@@ -2,14 +2,12 @@ import { createContext, useContext, useState } from 'react';
 
 const translations = {
   hi: {
-    // Nav
     dashboard: 'होम',
     voice: 'आवाज़ सहायक',
     cropDoctor: 'फसल डॉक्टर',
     schemes: 'सरकारी योजनाएं',
     mandi: 'मंडी भाव',
     sell: 'सरकार को बेचें',
-    // Onboarding
     welcome: 'Terra में आपका स्वागत है',
     welcomeSub: 'आपकी खेती, आपकी भाषा, आपकी ताकत।',
     yourName: 'आपका नाम',
@@ -17,7 +15,6 @@ const translations = {
     district: 'जिला',
     primaryCrop: 'मुख्य फसल',
     getStarted: 'शुरू करें',
-    // Dashboard
     goodMorning: 'सुप्रभात',
     goodAfternoon: 'नमस्कार',
     goodEvening: 'शुभ संध्या',
@@ -25,19 +22,16 @@ const translations = {
     askAnything: 'कुछ भी पूछें...',
     quickActions: 'त्वरित कार्य',
     todayWeather: 'आज का मौसम',
-    // Weather
     humidity: 'नमी',
     wind: 'हवा',
     feelsLike: 'महसूस होता है',
     aiRecommendations: 'AI सुझाव',
-    // Voice
     voiceAssistant: 'आवाज़ सहायक',
     voiceSubtitle: 'बोलें या लिखें - Terra आपकी मदद करेगा',
     tapToSpeak: 'बोलने के लिए दबाएं',
     listening: 'सुन रहा हूं...',
     typeQuestion: 'सवाल लिखें...',
     send: 'भेजें',
-    // Crop Doctor
     cropDoctorTitle: 'फसल डॉक्टर',
     cropDoctorSub: 'फसल की फोटो अपलोड करें, AI बीमारी बताएगा',
     uploadImage: 'फोटो अपलोड करें',
@@ -47,7 +41,6 @@ const translations = {
     symptoms: 'लक्षण',
     treatment: 'उपचार',
     prevention: 'बचाव',
-    // Schemes
     schemesTitle: 'सरकारी योजनाएं',
     schemesSub: 'किसानों के लिए सरकारी योजनाएं',
     benefits: 'लाभ',
@@ -55,17 +48,14 @@ const translations = {
     documents: 'जरूरी दस्तावेज़',
     howToApply: 'आवेदन कैसे करें',
     explainSimple: 'आसान हिंदी में समझाएं',
-    // Mandi
     mandiTitle: 'मंडी भाव',
     mandiSub: 'आज के ताज़ा बाज़ार भाव',
     crop: 'फसल',
     market: 'मंडी',
     price: 'भाव (₹/क्विंटल)',
     aiAnalysis: 'AI विश्लेषण',
-    // Sell
     sellTitle: 'सरकार को बेचें',
     sellSub: 'MSP पर सीधे सरकार को फसल बेचें',
-    // Common
     loading: 'लोड हो रहा है...',
     error: 'कुछ गड़बड़ हुई',
     retry: 'दोबारा कोशिश करें',

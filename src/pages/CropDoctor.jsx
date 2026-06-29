@@ -62,7 +62,6 @@ export default function CropDoctor() {
 
   return (
     <div className="space-y-5">
-      {/* Header */}
       <div>
         <h1 className="font-heading font-bold text-2xl text-text-primary">
           {t("cropDoctorTitle")}
@@ -72,7 +71,6 @@ export default function CropDoctor() {
         </p>
       </div>
 
-      {/* Upload Area */}
       <div
         onClick={() => fileRef.current.click()}
         className={`relative rounded-2xl border-2 border-dashed transition-all cursor-pointer overflow-hidden ${
@@ -117,7 +115,6 @@ export default function CropDoctor() {
         />
       </div>
 
-      {/* Analyze button */}
       {image && !loading && (
         <button
           onClick={handleAnalyze}
@@ -127,7 +124,6 @@ export default function CropDoctor() {
         </button>
       )}
 
-      {/* Loading */}
       {loading && (
         <div className="card flex flex-col items-center py-10 gap-4">
           <div
@@ -145,7 +141,6 @@ export default function CropDoctor() {
         </div>
       )}
 
-      {/* Results */}
       <AnimatePresence>
         {result && !loading && (
           <motion.div
@@ -163,7 +158,6 @@ export default function CropDoctor() {
               </div>
             ) : (
               <>
-                {/* Disease card */}
                 <div className="card">
                   <div className="flex items-start justify-between">
                     <div>
@@ -187,7 +181,6 @@ export default function CropDoctor() {
                   </div>
                 </div>
 
-                {/* Symptoms */}
                 {result.symptoms?.length > 0 && (
                   <div className="card">
                     <h3 className="font-heading font-semibold text-sm text-text-primary mb-3 flex items-center gap-2">
@@ -209,7 +202,6 @@ export default function CropDoctor() {
                   </div>
                 )}
 
-                {/* Actions */}
                 {result.actions?.length > 0 && (
                   <div className="card border-l-4 border-l-primary">
                     <h3 className="font-heading font-semibold text-sm text-text-primary mb-3 flex items-center gap-2">
@@ -234,7 +226,6 @@ export default function CropDoctor() {
                   </div>
                 )}
 
-                {/* Prevention */}
                 {result.prevention?.length > 0 && (
                   <div className="card">
                     <h3 className="font-heading font-semibold text-sm text-text-primary mb-3 flex items-center gap-2">

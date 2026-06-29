@@ -35,7 +35,7 @@ export default function Onboarding() {
   const handleNext = () => {
     if (step < steps.length) {
       if (step < steps.length - 1) setStep(s => s + 1);
-      else setStep(steps.length); // go to crop selection
+      else setStep(steps.length);
     }
   };
 
@@ -50,7 +50,6 @@ export default function Onboarding() {
 
   return (
     <div className="min-h-screen bg-bg flex flex-col">
-      {/* Header */}
       <div className="px-5 pt-safe-top pt-10 pb-4 flex justify-between items-start">
         <div>
           <div className="flex items-center gap-2 mb-6">
@@ -69,7 +68,6 @@ export default function Onboarding() {
       </div>
 
       <div className="flex-1 px-5 pb-10 max-w-sm mx-auto w-full">
-        {/* Progress dots */}
         <div className="flex gap-2 mb-8">
           {[...steps, { field: 'crop' }].map((_, i) => (
             <div
@@ -141,7 +139,6 @@ export default function Onboarding() {
         </motion.div>
       </div>
 
-      {/* Decorative bottom */}
       <div className="h-1 bg-gradient-to-r from-primary via-accent to-secondary" />
     </div>
   );

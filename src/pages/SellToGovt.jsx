@@ -189,13 +189,11 @@ export default function SellToGovt() {
 
   return (
     <div className="space-y-5">
-      {/* Header */}
       <div>
         <h1 className="font-heading font-bold text-2xl text-text-primary">{t('sellTitle')}</h1>
         <p className="text-text-secondary text-sm mt-0.5">{t('sellSub')}</p>
       </div>
 
-      {/* MSP Banner */}
       <div className="bg-primary rounded-2xl p-4 text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-24 h-24 bg-white/5 rounded-full -translate-y-8 translate-x-8" />
         <p className="text-white/70 text-xs font-medium uppercase tracking-wide mb-1">
@@ -212,7 +210,6 @@ export default function SellToGovt() {
         </div>
       </div>
 
-      {/* Step-by-step guide */}
       <div>
         <h2 className="font-heading font-semibold text-text-primary mb-3">
           {lang === 'hi' ? '📍 कैसे बेचें — पूरी प्रक्रिया' : '📍 How to Sell — Complete Process'}
@@ -289,7 +286,6 @@ export default function SellToGovt() {
         </div>
       </div>
 
-      {/* Helplines */}
       <div>
         <h2 className="font-heading font-semibold text-text-primary mb-3">
           {lang === 'hi' ? '📞 सहायता के लिए संपर्क करें' : '📞 Helpline Numbers'}
@@ -312,7 +308,6 @@ export default function SellToGovt() {
         </div>
       </div>
 
-      {/* Tip */}
       <div className="card bg-success/5 border border-success/20">
         <p className="text-sm text-text-secondary leading-relaxed">
           💡 <span className="font-semibold text-text-primary">

@@ -61,7 +61,6 @@ function PriceCard({ item, index }) {
         </div>
       </div>
 
-      {/* MSP row */}
       <div className="flex items-center justify-between mt-3 pt-3 border-t border-secondary/20">
         <div className="flex items-center gap-1.5">
           <span className="text-xs text-text-secondary">
@@ -76,7 +75,6 @@ function PriceCard({ item, index }) {
         </button>
       </div>
 
-      {/* AI Analysis */}
       <AnimatePresence>
         {open && (
           <motion.div
@@ -123,13 +121,11 @@ export default function MandiPrices() {
 
   return (
     <div className="space-y-4">
-      {/* Header */}
       <div>
         <h1 className="font-heading font-bold text-2xl text-text-primary">{t('mandiTitle')}</h1>
         <p className="text-text-secondary text-sm mt-0.5">{today}</p>
       </div>
 
-      {/* Legend */}
       <div className="flex gap-3 flex-wrap">
         {[
           { color: 'bg-success/10 text-success', label: lang === 'hi' ? 'MSP से ऊपर' : 'Above MSP' },
@@ -142,7 +138,6 @@ export default function MandiPrices() {
         ))}
       </div>
 
-      {/* Search */}
       <input
         type="text"
         value={search}
@@ -151,7 +146,6 @@ export default function MandiPrices() {
         className="input-field text-sm"
       />
 
-      {/* Price Cards */}
       <div className="space-y-3">
         {filtered.length > 0 ? (
           filtered.map((item, i) => (
@@ -165,7 +159,6 @@ export default function MandiPrices() {
         )}
       </div>
 
-      {/* Footer note */}
       <div className="card bg-warning/5 border border-warning/20">
         <p className="text-xs text-text-secondary leading-relaxed">
           ⚠️ {lang === 'hi'

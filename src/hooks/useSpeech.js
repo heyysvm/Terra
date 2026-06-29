@@ -102,4 +102,4 @@ export function useSpeechSynthesis() {
   }, []);
 
   return { speak, stop };
-}0
+}

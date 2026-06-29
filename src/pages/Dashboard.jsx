@@ -56,7 +56,6 @@ export default function Dashboard() {
 
   return (
     <div className="space-y-5">
-      {/* Welcome */}
       <motion.div
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
@@ -75,7 +74,6 @@ export default function Dashboard() {
         </div>
       </motion.div>
 
-      {/* Weather Card */}
       <motion.div
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
@@ -126,7 +124,6 @@ export default function Dashboard() {
           </div>
         ) : null}
 
-        {/* AI Tip */}
         {(aiTip || loadingTip) && (
           <div className="mt-4 pt-4 border-t border-secondary/20">
             <div className="flex items-center gap-2 mb-2">
@@ -148,7 +145,6 @@ export default function Dashboard() {
         )}
       </motion.div>
 
-      {/* Quick Actions */}
       <div>
         <h2 className="font-heading font-semibold text-text-primary mb-3">{t('quickActions')}</h2>
         <div className="grid grid-cols-2 gap-3">
@@ -174,7 +170,6 @@ export default function Dashboard() {
             </motion.div>
           ))}
 
-          {/* Ask Terra card */}
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}

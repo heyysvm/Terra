@@ -95,7 +95,6 @@ ${query}`,
 
   return (
     <div className="flex flex-col h-[calc(100vh-8rem)]">
-      {/* Header */}
       <div className="mb-4">
         <h1 className="font-heading font-bold text-2xl text-text-primary">
           {t("voiceAssistant")}
@@ -105,7 +104,6 @@ ${query}`,
         </p>
       </div>
 
-      {/* Messages */}
       <div className="flex-1 overflow-y-auto space-y-4 pb-4">
         {messages.length === 0 ? (
           <div className="text-center pt-8">
@@ -190,9 +188,7 @@ ${query}`,
         <div ref={messagesEndRef} />
       </div>
 
-      {/* Input Area */}
       <div className="border-t border-secondary/20 pt-4 space-y-3">
-        {/* Mic Button */}
         <div className="flex justify-center">
           <button
             onClick={handleMicToggle}
@@ -224,7 +220,6 @@ ${query}`,
           </p>
         )}
 
-        {/* Text input */}
         <div className="flex gap-2">
           <textarea
             ref={textareaRef}

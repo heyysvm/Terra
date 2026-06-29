@@ -17,7 +17,6 @@ export default function AppLayout({ children }) {
 
   return (
     <div className="min-h-screen bg-bg flex flex-col">
-      {/* Top Header */}
       <header className="sticky top-0 z-50 bg-surface/90 backdrop-blur-md border-b border-secondary/20 shadow-soft">
         <div className="max-w-lg mx-auto px-4 h-14 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
@@ -38,7 +37,6 @@ export default function AppLayout({ children }) {
         </div>
       </header>
 
-      {/* Main Content */}
       <main className="flex-1 max-w-lg mx-auto w-full px-4 py-5 pb-24">
         <motion.div
           key={location.pathname}
@@ -50,7 +48,6 @@ export default function AppLayout({ children }) {
         </motion.div>
       </main>
 
-      {/* Bottom Nav */}
       <nav className="fixed bottom-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-md border-t border-secondary/20 shadow-strong">
         <div className="max-w-lg mx-auto px-2 h-16 flex items-center justify-around">
           {navItems.map(item => {
